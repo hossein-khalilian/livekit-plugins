@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "livekit-plugins"
+version = "0.1.0"
+description = "Custom LiveKit STT and TTS plugins"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+authors = [
+    { name = "hossein khalilian", email = "hse.khalilian08@gmail.com" }
+]
+
+dependencies = [
+    "requests",
+    "torch",
+    "torchaudio",
+    "python-dotenv",
+    "aiofiles",
+    "httpx",
+    # LiveKit Python SDK — change version to what you use
+    "livekit-agents>=0.8.0"
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["livekit_plugins*"]
+
