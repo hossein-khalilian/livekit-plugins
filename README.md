@@ -12,6 +12,7 @@ This repository contains custom plugins for LiveKit focused on speech-to-text (S
 You can install the package directly from GitHub using pip:
 
 ```bash
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
 pip install git+https://github.com/hossein-khalilian/livekit-plugins.git
 
 ```
